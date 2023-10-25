@@ -1014,8 +1014,8 @@ body {
   .customer-list {
     border-radius: 4px;
     height: 88px;
-    width: 168px;
-    width: calc((100% - 48px) / 3);
+
+    max-width: calc((100% - 48px) / 3);
   }
 
   .customer-links {
