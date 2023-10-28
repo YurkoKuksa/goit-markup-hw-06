@@ -76,16 +76,12 @@
           aria-expanded="false"
           aria-controls="mobile-menu"
         >
-          <svg
+          <svg class="burger-svg"
             width="32"
-            height="22"
-            fill="currentColor"
-            viewBox="0 0 20 20"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-              d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
-            ></path>
+            height="22">
+          <use href="./images/icons.svg#burger"></use>
+          
+          </svg>
           </svg>
         </button>
       </div>
@@ -108,7 +104,7 @@
     <section class="section-description">
       <div class="container">
         <h2 class="visually-hidden">Description</h2>
-        <ul class="links list">
+        <ul class="links list description-menu">
           <li class="features-item">
             <div class="description-svg-items">
               <svg class="icon" width="64" height="64">
@@ -169,7 +165,7 @@
     <section class="section-what-are-we">
       <div class="container">
         <h2 class="section-title">What are we doing</h2>
-        <ul class="links list">
+        <ul class="links list doing-menu">
           <li class="section-three-list-item">
             <img
               src="./images/rectangle1.jpg"
@@ -202,7 +198,7 @@
     <section class="section-four">
       <div class="container">
         <h2 class="section-title">Our Team</h2>
-        <ul class="links list">
+        <ul class="links list team-menu">
           <li class="section-four-list">
             <img
               src="./images/img1.jpg"
@@ -482,7 +478,7 @@
     <section class="section-customer">
       <div class="customer-box-one">
         <h2 class="section-title">Customers</h2>
-        <ul class="customer-ul">
+        <ul class="customer-ul list">
           <li class="customer-list">
             <a href="#" class="customer-links">
               <svg class="icon-customers" width="110" height="56">
@@ -549,7 +545,7 @@
           <div class="social-media-footer">
             <p class="footer-header-icons">Social media</p>
 
-            <ul class="social-media-ul links footer-icons">
+            <ul class="social-media-ul links list footer-icons">
               <li class="social-media-li">
                 <a
                   href="https://www.instagram.com"
@@ -739,30 +735,97 @@
     <!-- Mobile Menue -->
     <div class="menu-container js-menu-container" id="mobile-menu">
       <button class="menu-toggle js-close-menu">
-        <svg
-          fill="currentColor"
-          viewBox="0 0 20 20"
-          xmlns="http://www.w3.org/2000/svg"
-          width="8"
-          height="8"
-        >
-          <path
-            fill-rule="evenodd"
-            d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
-            clip-rule="evenodd"
-          ></path>
+        <svg class="burger-close-btn" width="8" height="8">
+          <use href="./images/icons.svg#close"></use>
         </svg>
       </button>
 
-      <ul class="mobile-menu">
+      <ul class="mobile-menu list">
         <li>
-          <a class="mobile-menu-list" href="./index.html">Studio</a>
+          <a class="mobile-menu-link burget-studio-current" href="./index.html">Studio</a>
         </li>
         <li>
-          <a class="mobile-menu-list" href="./portfolio.html">Portfolio</a>
+          <a class="mobile-menu-link" href="./portfolio.html">Portfolio</a>
         </li>
-        <li><a class="mobile-menu-list" href="">Contacts</a></li>
+        <li><a class="mobile-menu-link" href="">Contacts</a></li>
       </ul>
+      
+<!-- Burger Contacts  -->
+<ul class="links list burger-contacts-menu">
+            
+            <li class="burger-contacts-menu-list">
+              <a href="tel:+110001111111" class="burger-phone link"
+                >+11 (000) 111-11-11</a
+              >
+            </li>
+
+            <li class="burger-contacts-menu-list">
+              <a
+                href="mailto:info@devstudio.com"
+                class="burger-email link"
+                >info@devstudio.com</a
+              >
+            </li>
+
+          </ul>
+<!-- burger social media -->
+          <ul class="social-media-burger links list footer-icons">
+              <li class="social-media-li">
+                <a
+                  href="https://www.instagram.com"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="social media link"
+                  class="icon-media-link burger-icons-link"
+                >
+                  <svg class="icon-social-media" width="24" height="24">
+                    <use href="./images/icons.svg#icon-instagram"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="social-media-li">
+                <a
+                  href="https://twitter.com"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="social media link"
+                  class="icon-media-link burger-icons-link"
+                >
+                  <svg class="icon-social-media" width="24" height="24">
+                    <use href="./images/icons.svg#icon-twitter"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="social-media-li">
+                <a
+                  href="https://www.facebook.com"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="social media link"
+                  class="icon-media-link burger-icons-link"
+                >
+                  <svg class="icon-social-media" width="24" height="24">
+                    <use href="./images/icons.svg#icon-facebook"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="social-media-li">
+                <a
+                  href="https://www.linkedin.com"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="social media link"
+                  class="icon-media-link burger-icons-link"
+                >
+                  <svg class="icon-social-media" width="24" height="24">
+                    <use href="./images/icons.svg#icon-linkedin"></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+
+
+
     </div>
 
     <!-- script connection -->
